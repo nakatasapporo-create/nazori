@@ -2,8 +2,8 @@
 const $=id=>document.getElementById(id);
 const basic=Array.from('あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをん');
 const extra=Array.from('がぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽぁぃぅぇぉゃゅょっ');
-const groups={hira:[...basic,...extra],kata:[...basic,...extra].map(c=>String.fromCharCode(c.charCodeAt(0)+96)).concat('ヴ','ー'),num:Array.from('0123456789')};
-const readings=['れい','いち','に','さん','よん','ご','ろく','なな','はち','きゅう'];
+const groups={hira:[...basic,...extra],kata:[...basic,...extra].map(c=>String.fromCharCode(c.charCodeAt(0)+96)).concat('ヴ','ー'),num:[...Array.from('0123456789'),'10']};
+const readings=['れい','いち','に','さん','よん','ご','ろく','なな','はち','きゅう','じゅう'];
 const fallback='"UD Digi Kyokasho N-R","Yu Kyokasho",serif';
 let fontFamily=fallback,fontReady=false,kind='hira',index=0,color='#337f72',strokes=[],active=null,total=0,credited=false,timer,frame=0,missingLayer=null;
 const canvas=$('canvas'),ctx=canvas.getContext('2d');let w=1,h=1;
