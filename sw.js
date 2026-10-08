@@ -1,6 +1,6 @@
 'use strict';
 const CACHE_PREFIX='nazori-shell-';
-const CACHE_NAME=CACHE_PREFIX+'46ae6d1e0384f053';
+const CACHE_NAME=CACHE_PREFIX+'969d842429de0988';
 const ASSETS=["./","./app.js","./data/KANJIVG-LICENSE.txt","./data/strokes.js","./fonts/OFL.txt","./fonts/klee-one-kana.ttf","./icons/icon-152.png","./icons/icon-167.png","./icons/icon-180.png","./icons/icon-192.png","./icons/icon-512.png","./icons/icon.svg","./icons/maskable-512.png","./manifest.webmanifest","./pwa.js","./scoring.js","./stroke-guide.js"];
 const base=new URL(self.registration.scope);
 const urls=ASSETS.map(asset=>new URL(asset,base).href);
